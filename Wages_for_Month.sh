@@ -6,17 +6,17 @@ totalSalary=0
 empratePerHr=20
 numWorkingDays=20
 
-for (( day=1; day<=$numWorkingDays; days++ ))
+for (( day=1;day<=$numWorkingDays;day++ ))
 do
 	empcheck=$((RANDOM%3));
-		case $empcheck in
-	        	$isFullTime)
-                		empHrs=8;;
-        		$isPartTime)
-                		empHrs=4;;
-       			 *)
-                		empHrs=0;;
-		esac
+	case $empcheck in
+	        $isFullTime)
+       			empHrs=8;;
+        	$isPartTime)
+               		empHrs=4;;
+       		 *)
+               		empHrs=0;;
+	esac
 
 	salary=$(($empHrs*$empratePerHr))
 	totalSalary=$(($totalSalary+$salary))
