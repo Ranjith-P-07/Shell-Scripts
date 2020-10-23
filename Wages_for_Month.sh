@@ -6,7 +6,8 @@ totalSalary=0
 empratePerHr=20
 numWorkingDays=20
 
-for (( day=1;day<=$numWorkingDays;day++ ))
+
+for (( day=1; day<=$numWorkingDays; day++ ))
 do
 	empcheck=$((RANDOM%3));
 	case $empcheck in
