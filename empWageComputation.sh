@@ -1,3 +1,3 @@
 #!/bin/bash -x
 
-echo "Welcome this is the Main Branch"
+echo "Welcome to Employee Wage Computation Program"
