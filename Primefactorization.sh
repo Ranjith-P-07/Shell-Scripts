@@ -1,11 +1,11 @@
 #!/bin/bash -x
-odd_array()
-even_array()
+odd_array=()
+even_array=()
 index=0
 read -p "Enter the number: " num
 if [[ ($num -ge 100) && ($num -le 999) ]];
 then
-	for((i=2;i<=$1;i++));
+	for((i=2;i<=$num;i++));
 	do
 		while [ $(($num%$i)) == 0 ]
 		do
@@ -24,12 +24,12 @@ fi
 
 reverse=0
 a=$(($num % 10))
-n=$(($n/10))
+n=$(($num/10))
 reverse=$(($reverse*10+$a))
 echo $reverse
 if [ $num -eq $reverse ]
 then
 	echo "Number is Palindrome"
 else
-	echo "Number is not Palindrome
-fi"
+	echo "Number is not Palindrome"
+fi
