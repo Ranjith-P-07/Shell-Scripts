@@ -17,7 +17,7 @@ Pattern2="^[A-Z]{1}[a-z]{3,}$"
 Check $LastName $Pattern2
 
 read -p "Enter Your email id : " Email
-Pattern3="^[0-9a-zA-Z]+([._+-][0-9a-zA-Z]+)*@[0-9a-zA-Z]+.[a-zA-Z]{3}([.][a-zA-Z]{2})*$"
+Pattern3="^[0-9a-zA-Z]+[._+-]*[0-9a-zA-Z]*+[@][0-9a-zA-Z]+[.][a-zA-Z]{3}([.][a-zA-Z]{2})*$"
 Check $Email $Pattern3
 
 read -p "Enter the Phone Number  : " PhoneNumber
